@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[MatricNo]_[Your Name]_[Instructor Name]_Project2</title>
+    <style>
+        :root {
+            --primary: #1A237E;
+            --secondary: #303F9F;
+            --text-dark: #212121;
+            --bg-light: #F8F9FA;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            background: var(--secondary);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background: var(--white);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1f));
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background: var(--bg-light);
+        }
+        a.button {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Programming e-Portfolio</h1>
+        <p>TK2323 / TM2213: Advanced Data, APIs, & Sensor Integration</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#labs">Labs</a>
+        <a href="#projects">Projects</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#skills">Skills & Resources</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- 1. Student Profile -->
+        <section id="profile">
+            <h2>👤 Student Profile</h2>
+            <ul>
+                <li><strong>Name:</strong> [Your Full Name]</li>
+                <li><strong>Matric No.:</strong> [Your Matric No.]</li>
+                <li><strong>Programme:</strong> [Your Programme]</li>
+                <li><strong>Instructor:</strong> Dr. Nazatul [Or Instructor's Full Name]</li>
+            </ul>
+            <h3>About Me & Goals</h3>
+            <p>[Write a short introduction about yourself and your learning goals for this course.]</p>
+            <h3>SDG Focus</h3>
+            <p><strong>SDG [Number]: [SDG Name]</strong></p>
+            <p><em>"[Write your one-line statement about your chosen SDG here.]"</em></p>
+        </section>
+
+        <!-- 2. Lab Submissions -->
+        <section id="labs">
+            <h2>💻 Lab Submissions</h2>
+            <div class="grid">
+                <!-- Lab 1 -->
+                <div class="card">
+                    <h3>Lab 1: UI</h3>
+                    <p><strong>Reflection:</strong> [Briefly describe what you learned and challenges faced]</p>
+                    <a href="[Your YouTube Link - Unlisted]" class="button" target="_blank">Watch Video</a>
+                    <p><em>*Attach clear and labelled screenshots below or link them here.*</em></p>
+                </div>
+                <!-- Lab 2 -->
+                <div class="card">
+                    <h3>Lab 2: Interaction</h3>
+                    <p><strong>Reflection:</strong> [Briefly describe what you learned]</p>
+                    <a href="[Your YouTube Link - Unlisted]" class="button" target="_blank">Watch Video</a>
+                </div>
+                <!-- Lab 3 -->
+                <div class="card">
+                    <h3>Lab 3: Material Design</h3>
+                    <p><strong>Reflection:</strong> [Briefly describe what you learned]</p>
+                    <a href="[Your YouTube Link - Unlisted]" class="button" target="_blank">Watch Video</a>
+                </div>
+                <!-- Lab 4 -->
+                <div class="card">
+                    <h3>Lab 4: Navigation</h3>
+                    <p><strong>Reflection:</strong> [Briefly describe what you learned]</p>
+                    <a href="[Your YouTube Link - Unlisted]" class="button" target="_blank">Watch Video</a>
+                </div>
+                <!-- Lab 5 -->
+                <div class="card">
+                    <h3>Lab 5: Room</h3>
+                    <p><strong>Reflection:</strong> [Briefly describe what you learned]</p>
+                    <a href="[Your YouTube Link - Unlisted]" class="button" target="_blank">Watch Video</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Project Submissions -->
+        <section id="projects">
+            <h2>🚀 Project Submissions</h2>
+            
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Project 1: Foundation & Navigation</h3>
+                <p><strong>Problem Statement:</strong> [Describe the SDG problem and how Project 1 aimed to solve it]</p>
+                <p><strong>Features:</strong> Multi-screen navigation, state management via ViewModel, basic UI.</p>
+                <p><strong>Lessons Learned:</strong> [What did you learn during Project 1?]</p>
+                <a href="[Your Project 1 YouTube VSR Link]" class="button" target="_blank">VSR Video</a>
+                <a href="[Your Project 1 GitHub Link]" class="button" target="_blank">GitHub Repository</a>
+            </div>
+
+            <div class="card">
+                <h3>Project 2: Advanced Data, APIs, & Sensor Integration</h3>
+                <p><strong>App Name:</strong> OnRoad</p>
+                <p><strong>Problem Statement:</strong> [Explain the continued problem and how the new features solve it]</p>
+                <p><strong>Features Implemented:</strong> 
+                    <ul>
+                        <li>Local Persistence (Room Database) for Saved Hubs</li>
+                        <li>Cloud Integration (Firebase) for Community Reports</li>
+                        <li>Live Internet Data (Web API) for Weather/Road Conditions</li>
+                        <li>Hardware Sensor (GPS/Location) for current coordinates</li>
+                        <li>8 functional screens</li>
+                    </ul>
+                </p>
+                <p><strong>Lessons Learned:</strong> [What did you learn implementing databases, APIs, and sensors?]</p>
+                <a href="[Your Project 2 YouTube VSR Link]" class="button" target="_blank">VSR Video</a>
+                <a href="[Your Project 2 GitHub Link]" class="button" target="_blank">GitHub Repository</a>
+            </div>
+        </section>
+
+        <!-- 4. Reflection & Learning Journey -->
+        <section id="reflection">
+            <h2>🧠 Reflection & Learning Journey</h2>
+            <p><strong>Growth:</strong> [Reflect on how your skills improved from Lab 1 to Project 2]</p>
+            <p><strong>Challenges:</strong> [Discuss specific roadblocks, like setting up Retrofit or Firebase, and how you overcame them]</p>
+            <p><strong>SDG Impact:</strong> [How does your final app, OnRoad, meaningfully contribute to your chosen SDG?]</p>
+        </section>
+
+        <!-- 5. Skills, Tech Stack & Resources -->
+        <section id="skills">
+            <h2>🛠️ Skills & Resources</h2>
+            <div class="grid">
+                <div>
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li>Kotlin & Jetpack Compose</li>
+                        <li>Android Navigation Component</li>
+                        <li>Room Database (SQLite)</li>
+                        <li>Firebase Firestore</li>
+                        <li>Retrofit / REST APIs</li>
+                        <li>Hardware Sensors (GPS/LocationManager)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources & References</h3>
+                    <ul>
+                        <li><a href="https://developer.android.com/" target="_blank">Android Developer Documentation</a></li>
+                        <li>[List your specific Weather/API documentation here]</li>
+                        <li>[List any specific libraries used]</li>
+                        <li><em>AI Assistance Acknowledgement:</em> Used AI tools for code layout troubleshooting and learning explanations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
